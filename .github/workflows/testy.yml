@@ -39,7 +39,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: pytest -m ui --html=raport-ui.html --self-contained-html
+      - run: pytest -m "ui and not meridian" --html=raport-ui.html --self-contained-html
         env:
           HEADLESS: "1"
       - uses: actions/upload-artifact@v4
@@ -47,6 +47,27 @@ jobs:
         with:
           name: raport-ui
           path: portfolio-qa/08-automatyzacja/raport-ui.html
+
+  meridian:
+    name: Meridian Bank (PyTest + Selenium)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: portfolio-qa/08-automatyzacja
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest -m meridian -rxX --html=raport-meridian.html --self-contained-html
+        env:
+          HEADLESS: "1"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raport-meridian
+          path: portfolio-qa/08-automatyzacja/raport-meridian.html
 
   postman:
     name: Kolekcja Postman (Newman)

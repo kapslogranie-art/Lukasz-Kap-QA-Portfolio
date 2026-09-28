@@ -12,7 +12,9 @@ Kolejność folderów odpowiada kolejności pracy testera w sprincie:
 | 6. Dane | [`06-sql`](06-sql) | Zapytania T-SQL (Microsoft SQL Server) weryfikujące dane |
 | 7. AI | [`07-ai-w-qa`](07-ai-w-qa) | Jak używam AI i jak weryfikuję wyniki, biblioteka promptów |
 | 8. Automatyzacja | [`08-automatyzacja`](08-automatyzacja) | PyTest + Selenium (Page Object), testy API, CI w GitHub Actions |
+| 9. Projekt bankowy | [`09-meridian-bank`](09-meridian-bank) | Meridian Bank: 47 przypadków, 16 błędów, 32 testy automatyczne |
 
 **Testowane aplikacje:** [SauceDemo](https://www.saucedemo.com) (sklep — aplikacja demonstracyjna
-do nauki testów) i [Restful-Booker](https://restful-booker.herokuapp.com) (API do nauki testów).
-Obie są publiczne — każdy wynik można samodzielnie odtworzyć.
+do nauki testów), [Restful-Booker](https://restful-booker.herokuapp.com) (API do nauki testów)
+i [Meridian Bank](https://lukasztm.github.io/MeridianBank/) (szkoleniowa bankowość internetowa).
+Wszystkie są publiczne — każdy wynik można samodzielnie odtworzyć.

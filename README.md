@@ -17,8 +17,16 @@ sesje testów eksploracyjnych, kolekcję Postmana, zapytania SQL (Microsoft SQL 
 automatyczne uruchamiane w CI oraz opis tego, jak używam AI w pracy testera.
 
 Testowane aplikacje są publiczne, więc każdy wynik można odtworzyć:
-**[SauceDemo](https://www.saucedemo.com)** (sklep internetowy do nauki testów) oraz
-**[Restful-Booker](https://restful-booker.herokuapp.com)** (API do nauki testów).
+**[SauceDemo](https://www.saucedemo.com)** (sklep internetowy do nauki testów),
+**[Restful-Booker](https://restful-booker.herokuapp.com)** (API do nauki testów) oraz
+**[Meridian Bank](https://lukasztm.github.io/MeridianBank/)** (szkoleniowa bankowość internetowa).
+
+## ⭐ Projekt główny: Meridian Bank
+
+Kompletne testy bankowości internetowej: **47 przypadków testowych, 16 zgłoszonych błędów (4 krytyczne —
+m.in. przelew obciąża zły rachunek, zły kurs w kantorze, 5-cyfrowy kod BLIK) i 32 testy automatyczne**
+uruchamiane w CI. Każdy błąd ma test, który zaalarmuje, gdy błąd zostanie naprawiony (retest).
+➡ [`portfolio-qa/09-meridian-bank`](portfolio-qa/09-meridian-bank)
 
 ## Wymagania z oferty → dowód w repozytorium
 
@@ -26,7 +34,7 @@ Testowane aplikacje są publiczne, więc każdy wynik można odtworzyć:
 |---|---|
 | Scenariusze i przypadki testowe | [30 przypadków](portfolio-qa/02-przypadki-testowe/przypadki-testowe.md) + [CSV do Xray/TestRail](portfolio-qa/02-przypadki-testowe/przypadki-testowe-import.csv) |
 | Testy funkcjonalne, regresyjne, eksploracyjne | [Raport z testów](portfolio-qa/01-plan-testow/raport-z-testow.md), [checklista regresji](portfolio-qa/02-przypadki-testowe/checklista-regresji.md), [sesje eksploracyjne](portfolio-qa/04-testy-eksploracyjne/sesje-eksploracyjne.md) |
-| Zgłaszanie, opisywanie i retest błędów | [Raporty w formacie Jira](portfolio-qa/03-raporty-bledow/raporty-bledow.md) |
+| Zgłaszanie, opisywanie i retest błędów | [Raporty w formacie Jira](portfolio-qa/03-raporty-bledow/raporty-bledow.md), [16 błędów w Meridian Bank](portfolio-qa/09-meridian-bank/raporty-bledow.md) |
 | Cykl życia defektu i proces testowy | [Cykl życia defektu + STLC](portfolio-qa/03-raporty-bledow/cykl-zycia-defektu.md) |
 | Analiza wymagań i luki jakościowe | [Analiza wymagań + pytania do PO](portfolio-qa/01-plan-testow/analiza-wymagan.md) |
 | Jira, Xray, TestRail | Format zgłoszeń Jira, import CSV |
@@ -52,7 +60,8 @@ Szczegółowa macierz: [`aplikacja/dopasowanie-do-oferty.md`](aplikacja/dopasowa
 │   ├── 05-testy-api/                ← kolekcja Postman + przypadki API
 │   ├── 06-sql/                      ← zapytania T-SQL weryfikujące dane
 │   ├── 07-ai-w-qa/                  ← jak używam AI i jak weryfikuję wyniki
-│   └── 08-automatyzacja/            ← PyTest + Selenium (Page Object) + testy API
+│   ├── 08-automatyzacja/            ← PyTest + Selenium (Page Object) + testy API
+│   └── 09-meridian-bank/            ← projekt testowy bankowości: przypadki, 16 błędów, raport
 ├── rozmowa/                         ← przygotowanie do rozmowy, angielski, plan 30-60-90
 ├── dokumenty/                       ← CV (PDF) i portfolio (HTML)
 └── .github/workflows/testy.yml      ← CI: testy API, UI i Newman

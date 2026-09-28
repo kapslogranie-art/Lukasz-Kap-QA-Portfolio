@@ -9,16 +9,18 @@ uruchomić, zrozumieć i rozwijać taki zestaw testów.
 ```
 08-automatyzacja/
 ├── conftest.py            ← fixtures: przeglądarka (headless w CI), adresy aplikacji
-├── pytest.ini             ← znaczniki: smoke, ui, api
+├── pytest.ini             ← znaczniki: smoke, ui, api, meridian
 ├── requirements.txt
 ├── pages/                 ← Page Object Model
 │   ├── base_page.py       ← wspólne metody z jawnym oczekiwaniem (WebDriverWait)
 │   ├── login_page.py
 │   ├── inventory_page.py
-│   └── checkout_pages.py
+│   ├── checkout_pages.py
+│   └── meridian_page.py   ← Meridian Bank (lokatory po data-testid)
 └── tests/
     ├── ui/                ← SauceDemo: logowanie, sortowanie, koszyk, zakup E2E, walidacja formularza
-    └── api/               ← Restful-Booker: auth, CRUD rezerwacji, testy negatywne
+    ├── api/               ← Restful-Booker: auth, CRUD rezerwacji, testy negatywne
+    └── meridian/          ← Meridian Bank: 32 testy, w tym 13 dokumentujących znane błędy (xfail)
 ```
 
 Każdy test ma w docstringu ID przypadku manualnego (np. `TC-022`, `API-09`) — **śledzenie od
@@ -34,6 +36,7 @@ pip install -r requirements.txt
 pytest                      # wszystkie testy
 pytest -m smoke             # tylko smoke
 pytest -m api               # tylko API
+pytest -m meridian -rxX     # Meridian Bank + podsumowanie znanych błędów
 HEADLESS=0 pytest -m ui     # UI z widocznym oknem przeglądarki
 pytest --html=raport.html --self-contained-html   # raport HTML
 ```
@@ -44,7 +47,7 @@ Selenium 4 sam pobiera sterownik przeglądarki (Selenium Manager) — wystarczy 
 
 Plik [`.github/workflows/testy.yml`](../../.github/workflows/testy.yml) uruchamia przy każdym pushu:
 1. testy API (PyTest + requests),
-2. testy UI (Selenium w trybie headless),
+2. testy UI (Selenium w trybie headless) — SauceDemo i osobno Meridian Bank,
 3. kolekcję Postmana przez **Newman**,
 
 a raporty HTML zapisuje jako artefakty. Dodatkowo co poniedziałek odpala się regresja.
@@ -56,6 +59,7 @@ a raporty HTML zapisuje jako artefakty. Dodatkowo co poniedziałek odpala się r
 - **Jawne oczekiwanie** (`WebDriverWait`) zamiast `time.sleep()`.
 - **Niezależne testy** — każdy test loguje się sam i nie zależy od kolejności.
 - **Sprzątanie danych** — rezerwacje utworzone w testach API są usuwane (fixture z `yield`).
+- **Znane błędy jako `xfail(strict=True)`** — pipeline zielony, a naprawa błędu od razu sygnalizuje potrzebę retestu.
 - **Parametryzacja** — jeden test, wiele zestawów danych (`@pytest.mark.parametrize`).
 
 ## Utrzymanie — co robię, gdy test „czerwienieje”

@@ -24,7 +24,7 @@ Tryb pracy: hybrydowy, **2× w miesiącu w biurze we Wrocławiu**. Benefity: Mul
 |---|---|
 | Przygotowywanie scenariuszy testowych i przypadków testowych | [przypadki-testowe.md](../portfolio-qa/02-przypadki-testowe/przypadki-testowe.md) — 30 przypadków, techniki projektowania |
 | Wykonywanie testów manualnych funkcjonalnych, regresyjnych i eksploracyjnych | [raport z testów](../portfolio-qa/01-plan-testow/raport-z-testow.md), [checklista regresji](../portfolio-qa/02-przypadki-testowe/checklista-regresji.md), [sesje eksploracyjne](../portfolio-qa/04-testy-eksploracyjne/sesje-eksploracyjne.md) |
-| Zgłaszanie, opisywanie i retest błędów | [raporty błędów](../portfolio-qa/03-raporty-bledow/raporty-bledow.md), [cykl życia defektu](../portfolio-qa/03-raporty-bledow/cykl-zycia-defektu.md) |
+| Zgłaszanie, opisywanie i retest błędów | [raporty błędów](../portfolio-qa/03-raporty-bledow/raporty-bledow.md), [16 błędów w Meridian Bank](../portfolio-qa/09-meridian-bank/raporty-bledow.md), [cykl życia defektu](../portfolio-qa/03-raporty-bledow/cykl-zycia-defektu.md); retest automatyczny przez `xfail(strict=True)` |
 | Analiza wymagań i identyfikacja luk jakościowych | [analiza-wymagan.md](../portfolio-qa/01-plan-testow/analiza-wymagan.md) — 9 pytań do PO, matryca ryzyk |
 | Współpraca z analitykami, developerami i biznesem | Pytania do PO, raport z testów z rekomendacją dla zespołu, zasady komunikacji w [planie testów](../portfolio-qa/01-plan-testow/plan-testow-saucedemo.md) |
 | Wsparcie w przygotowaniu lub utrzymaniu prostych testów automatycznych | [08-automatyzacja](../portfolio-qa/08-automatyzacja) — PyTest, Selenium, Page Object, sekcja „utrzymanie” |
@@ -33,7 +33,7 @@ Tryb pracy: hybrydowy, **2× w miesiącu w biurze we Wrocławiu**. Benefity: Mul
 
 | Wymaganie | Status | Dowód / komentarz |
 |---|---|---|
-| Doświadczenie w testach manualnych webowych lub mobilnych | ◐ projektowe, bez komercyjnego | Pełny projekt aplikacji webowej + [checklista mobile/RWD](../portfolio-qa/04-testy-eksploracyjne/checklista-mobile-rwd.md) |
+| Doświadczenie w testach manualnych webowych lub mobilnych | ◐ projektowe, bez komercyjnego | Dwa pełne projekty webowe (sklep + [bankowość Meridian Bank](../portfolio-qa/09-meridian-bank)) + [checklista mobile/RWD](../portfolio-qa/04-testy-eksploracyjne/checklista-mobile-rwd.md) |
 | Umiejętność pisania test case'ów i zgłoszeń błędów | ✔ | 30 przypadków, 6 raportów |
 | Znajomość Jira, Xray, TestRail lub podobnych | ✔ Jira / ◐ Xray, TestRail | Format Jira, CSV do importu |
 | Podstawowa znajomość testowania API | ✔ | 14 przypadków, kolekcja Postman, testy w Pythonie |

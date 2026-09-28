@@ -1,6 +1,6 @@
 # Checklista testów mobilnych i responsywności (RWD)
 
-Oferta wymaga doświadczenia w testach aplikacji **webowych lub mobilnych**. Ta checklista pokazuje,
+Oferty dla testerów często wymagają doświadczenia w testach aplikacji **webowych lub mobilnych**. Ta checklista pokazuje,
 na co zwracam uwagę przy testach na urządzeniach mobilnych — zarówno dla stron responsywnych
 (emulacja w Chrome DevTools / prawdziwy telefon), jak i aplikacji natywnych.
 

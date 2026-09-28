@@ -1,16 +1,22 @@
-# Przygotowanie do rozmowy — Hiberus Poland, Tester Manualny
+# Przygotowanie do rozmowy — Tester manualny / Junior QA
 
-## 1. Co wiem o firmie i roli
+## 1. Research firmy (wypełnij przed każdą rozmową, ok. 20 minut)
 
-- **Hiberus** — firma technologiczna z Hiszpanii, 4700+ specjalistów, 14+ krajów, projekty dla klientów
-  na całym świecie. Technologie: AI, Data, Cloud, Software Development, BI, Cybersecurity.
-- „Więcej niż jeden projekt. Więcej niż jeden rynek.” — po zakończeniu projektu szukają kolejnego
-  w ramach Hiberus, również w innych krajach → **stabilność i długoterminowa kariera**.
-- **Hiberus University** — ponad 1000 osób przeszkolonych w zeszłym roku → ważne dla mnie jako juniora.
-- Biuro: pl. Teatralny 1/22, Wrocław; praca hybrydowa — **2× w miesiącu w biurze**.
-- Benefity: Multisport, prywatna opieka medyczna.
-- **Rola:** testy manualne + rozwój w kierunku automatyzacji; zespół zwinny, codzienna współpraca
-  z analitykami, developerami i biznesem; możliwość współtworzenia **standardów jakości i regresji**.
+Źródła: strona kariery firmy, ogłoszenie, LinkedIn firmy i zespołu QA, opinie (GoWork, Glassdoor).
+
+| Pytanie | Notatka |
+|---|---|
+| Czym zajmuje się firma? Produkt własny czy software house / outsourcing? | |
+| Branża projektu (bankowość, e-commerce, medycyna, gry…)? Jakie ryzyka jakościowe są w niej najważniejsze? | |
+| Które wymagania z ogłoszenia mam w [macierzy kompetencji](../materialy-aplikacyjne/macierz-kompetencji.md)? | |
+| Czego z ogłoszenia nie znam — jak uczciwie o tym powiem? | |
+| Tryb pracy i lokalizacja biura — czy dojazd jest realny? | |
+| Szkolenia, ścieżka rozwoju, benefity | |
+| Widełki wynagrodzenia z ogłoszenia / rynkowe | |
+| 2–3 zdania: **dlaczego właśnie ta firma?** | |
+
+> Jeśli firma działa w branży finansowej — na rozmowie opowiedz o projekcie **Meridian Bank**
+> (błędy w kwotach i autoryzacji). E-commerce — **SauceDemo**. Integracje / backend — **testy API i SQL**.
 
 ## 2. Przedstawienie się (ok. 90 sekund)
 
@@ -18,13 +24,14 @@
 > W ALX przeszedłem dwa kursy: „Tester oprogramowania z elementami AI” — przypadki testowe, Jira,
 > Postman, SQL, Scrum — oraz „Tester Automatyzujący” — Python, PyTest, Selenium i Page Object.
 >
-> Nie mam jeszcze komercyjnego doświadczenia, dlatego pod tę ofertę przygotowałem kompletny projekt na
-> GitHubie: od analizy wymagań i pytań do analityka, przez 30 przypadków testowych i raporty błędów,
-> po testy API, zapytania SQL i proste testy automatyczne uruchamiane w GitHub Actions.
+> Nie mam jeszcze komercyjnego doświadczenia, dlatego zbudowałem portfolio na GitHubie. Największy projekt
+> to testy bankowości internetowej: 47 przypadków testowych i 16 znalezionych błędów, w tym 4 krytyczne —
+> na przykład przelew, który obciążał niewłaściwy rachunek. Do tego testy API, SQL i testy automatyczne
+> w PyTest i Selenium, uruchamiane w GitHub Actions.
 >
 > Moje mocne strony to dokładność, konsekwencja i komunikatywność — zależy mi, żeby raport błędu był
 > tak jasny, że developer nie musi dopytywać. Ta rola łączy dokładnie to, co chcę robić: solidne testy
-> manualne z rozwojem w automatyzacji. Dlatego bardzo mi na niej zależy.
+> manualne z rozwojem w automatyzacji. [Dopisz 1 zdanie: dlaczego właśnie ta firma.]
 
 ## 3. Pytania techniczne — krótkie odpowiedzi
 
@@ -145,8 +152,9 @@ i warunków. Dokumentuję próby i konsultuję z developerem logi.
   po angielsku, uczę się słownictwa QA, piszę zgłoszenia po angielsku. Dokumentację techniczną rozumiem.
 - **Brak doświadczenia komercyjnego?** Dlatego zbudowałem portfolio, które odwzorowuje realny proces.
   Szybko się uczę i jestem gotowy na zadanie próbne.
-- **Praca hybrydowa i dojazd?** Mieszkam w Radzyniu Podlaskim; przyjazd do Wrocławia 2× w miesiącu
-  to dla mnie żaden problem, podobnie jak częstsze wizyty na początku wdrożenia.
+- **Praca hybrydowa / stacjonarna i dojazd?** Mieszkam w Radzyniu Podlaskim — przygotuj konkretną
+  odpowiedź dla danej lokalizacji (jak dojedziesz, jak często możesz być w biurze, czy rozważasz przeprowadzkę).
+- **Praca zdalna?** Mam przygotowane stanowisko pracy, stabilny internet i samodzielnie organizuję pracę.
 - **Sytuacja, w której wykazałeś się dokładnością / konsekwencją** — przygotuj 1–2 przykłady
   (z kursu, pracy, życia) w formacie STAR.
 
@@ -156,16 +164,16 @@ i warunków. Dokumentuję próby i konsultuję z developerem logi.
 2. Ilu testerów jest w zespole i czy jest ktoś, od kogo mogę się uczyć (mentor / senior QA)?
 3. Jak wygląda proces testowy — Jira + Xray czy TestRail? Jak jest zorganizowana regresja?
 4. Jakie narzędzia do automatyzacji są używane w projekcie i jak wygląda ścieżka rozwoju w tym kierunku?
-5. Jakie szkolenia z Hiberus University są dostępne dla testerów na start?
+5. Jakie szkolenia są dostępne dla testerów na start? Czy firma wspiera certyfikację ISTQB?
 6. Jak wygląda onboarding w pierwszych tygodniach?
 7. Po czym poznacie po 3 miesiącach, że to był dobry wybór?
 8. Jakie są kolejne etapy rekrutacji?
 
 ## 7. Kwestie formalne — przygotuj odpowiedź
 
-- **Oczekiwania finansowe** — przed rozmową sprawdź aktualne widełki w ogłoszeniu (w wynikach
-  wyszukiwania pojawiała się oferta Hiberus dla juniora QA na B2B ok. 8 400–12 600 zł netto + VAT);
-  podaj kwotę w widełkach i formę umowy (UoP / B2B).
+- **Oczekiwania finansowe** — sprawdź widełki w ogłoszeniu i rynkowe stawki juniora QA
+  (np. raporty płacowe portali justjoin.it, nofluffjobs, theprotocol); podaj kwotę w widełkach
+  i formę umowy (UoP / B2B — pamiętaj, że B2B to kwota netto + VAT i własne koszty ZUS).
 - **Dostępność** — od kiedy możesz zacząć.
 - **Sprzęt** — czy laptop jest zapewniany.
 
@@ -173,7 +181,8 @@ i warunków. Dokumentuję próby i konsultuję z developerem logi.
 
 - [ ] Repozytorium otwarte w przeglądarce — umiem pokazać: przypadek testowy, raport błędu,
       kolekcję Postmana, jeden test PyTest i uruchomiony pipeline w GitHub Actions
-- [ ] **Sam odtworzyłem każdy błąd z `03-raporty-bledow`** i umiem o nim opowiedzieć
+- [ ] **Sam odtworzyłem błędy z raportów** (SauceDemo i Meridian Bank) i umiem o nich opowiedzieć
+- [ ] Wypełniona tabela „Research firmy” (sekcja 1)
 - [ ] Przećwiczone przedstawienie się (PL i EN) na głos
 - [ ] Kamera, mikrofon, dobre światło, cisza, naładowany telefon
 - [ ] Kartka z pytaniami do rekrutera

@@ -1,59 +1,55 @@
-# Łukasz Kap — Tester Manualny · portfolio QA
+# Łukasz Kap — Tester manualny / Junior QA · portfolio
 
-> Materiały aplikacyjne i portfolio QA przygotowane pod ofertę
-> **Tester Manualny / Testerka Manualna — Hiberus Poland, Wrocław** (praca hybrydowa, 2× w miesiącu w biurze).
-
-**Kontakt:** kaplukasz@gmail.com · Radzyń Podlaski — dojazd do biura we Wrocławiu 2× w miesiącu bez problemu
+**Kontakt:** kaplukasz@gmail.com · 515 836 183 · Radzyń Podlaski (praca zdalna, hybrydowa lub stacjonarna)
+**Portfolio online:** [lukasztm.github.io/Portfolio](https://lukasztm.github.io/Portfolio)
 
 [![Testy automatyczne](https://github.com/kapslogranie-art/Lukasz-Kap-QA-Portfolio/actions/workflows/testy.yml/badge.svg)](https://github.com/kapslogranie-art/Lukasz-Kap-QA-Portfolio/actions/workflows/testy.yml)
 
 ---
 
-## O co chodzi w tym repozytorium
+## O mnie w 30 sekund
 
-To repozytorium nie tylko opisuje, co umiem — pokazuje, **jak pracuję**. Każde wymaganie z ogłoszenia
-ma tu konkretny, sprawdzalny artefakt: analizę wymagań, plan testów, przypadki testowe, raporty błędów,
-sesje testów eksploracyjnych, kolekcję Postmana, zapytania SQL (Microsoft SQL Server), testy
-automatyczne uruchamiane w CI oraz opis tego, jak używam AI w pracy testera.
+Jestem początkującym testerem oprogramowania po kursach ALX *Tester oprogramowania z elementami AI*
+i *Tester Automatyzujący*. Nie mam jeszcze doświadczenia komercyjnego, dlatego to repozytorium
+**pokazuje, jak pracuję**: od analizy wymagań, przez przypadki testowe i raporty błędów, po testy API,
+SQL i testy automatyczne uruchamiane w CI.
 
-Testowane aplikacje są publiczne, więc każdy wynik można odtworzyć:
-**[SauceDemo](https://www.saucedemo.com)** (sklep internetowy do nauki testów),
-**[Restful-Booker](https://restful-booker.herokuapp.com)** (API do nauki testów) oraz
-**[Meridian Bank](https://lukasztm.github.io/MeridianBank/)** (szkoleniowa bankowość internetowa).
+Wszystkie testowane aplikacje są publiczne, więc każdy wynik można samodzielnie odtworzyć:
+**[Meridian Bank](https://lukasztm.github.io/MeridianBank/)** (szkoleniowa bankowość internetowa),
+**[SauceDemo](https://www.saucedemo.com)** (sklep internetowy) i
+**[Restful-Booker](https://restful-booker.herokuapp.com)** (API).
 
-## ⭐ Projekt główny: Meridian Bank
+## ⭐ Projekt główny: testy bankowości internetowej (Meridian Bank)
 
-Kompletne testy bankowości internetowej: **47 przypadków testowych, 16 zgłoszonych błędów (4 krytyczne —
-m.in. przelew obciąża zły rachunek, zły kurs w kantorze, 5-cyfrowy kod BLIK) i 32 testy automatyczne**
-uruchamiane w CI. Każdy błąd ma test, który zaalarmuje, gdy błąd zostanie naprawiony (retest).
+**47 przypadków testowych · 16 zgłoszonych błędów (4 krytyczne) · 32 testy automatyczne w CI**
+
+Przykładowe znaleziska: przelew z konta oszczędnościowego obciąża konto osobiste, kantor przelicza
+walutę po niewłaściwym kursie, kod BLIK ma 5 cyfr zamiast 6, blokada logowania działa po 2 zamiast
+3 próbach. 13 błędów ma test automatyczny, który zaalarmuje, gdy błąd zostanie naprawiony — sygnał do retestu.
 ➡ [`portfolio-qa/09-meridian-bank`](portfolio-qa/09-meridian-bank)
 
-## Wymagania z oferty → dowód w repozytorium
+## Co umiem → gdzie to zobaczyć
 
-| Z oferty | Gdzie to pokazuję |
+| Umiejętność | Dowód |
 |---|---|
-| Scenariusze i przypadki testowe | [30 przypadków](portfolio-qa/02-przypadki-testowe/przypadki-testowe.md) + [CSV do Xray/TestRail](portfolio-qa/02-przypadki-testowe/przypadki-testowe-import.csv) |
-| Testy funkcjonalne, regresyjne, eksploracyjne | [Raport z testów](portfolio-qa/01-plan-testow/raport-z-testow.md), [checklista regresji](portfolio-qa/02-przypadki-testowe/checklista-regresji.md), [sesje eksploracyjne](portfolio-qa/04-testy-eksploracyjne/sesje-eksploracyjne.md) |
-| Zgłaszanie, opisywanie i retest błędów | [Raporty w formacie Jira](portfolio-qa/03-raporty-bledow/raporty-bledow.md), [16 błędów w Meridian Bank](portfolio-qa/09-meridian-bank/raporty-bledow.md) |
-| Cykl życia defektu i proces testowy | [Cykl życia defektu + STLC](portfolio-qa/03-raporty-bledow/cykl-zycia-defektu.md) |
-| Analiza wymagań i luki jakościowe | [Analiza wymagań + pytania do PO](portfolio-qa/01-plan-testow/analiza-wymagan.md) |
-| Jira, Xray, TestRail | Format zgłoszeń Jira, import CSV |
-| Testy web / mobile | Projekt SauceDemo + [checklista mobile/RWD](portfolio-qa/04-testy-eksploracyjne/checklista-mobile-rwd.md) |
-| Podstawy testowania API | [Przypadki API + kolekcja Postman](portfolio-qa/05-testy-api) |
-| Podstawy SQL (Microsoft SQL) | [Zapytania T-SQL](portfolio-qa/06-sql) |
-| *Mile widziane:* Selenium, Python | [PyTest + Selenium, Page Object](portfolio-qa/08-automatyzacja) |
-| *Mile widziane:* CI/CD | [GitHub Actions](.github/workflows/testy.yml) — testy przy każdym pushu |
-| *Mile widziane:* narzędzia AI w QA | [AI w pracy testera + prompty](portfolio-qa/07-ai-w-qa) |
-
-Szczegółowa macierz: [`aplikacja/dopasowanie-do-oferty.md`](aplikacja/dopasowanie-do-oferty.md)
+| Analiza wymagań, wykrywanie luk jakościowych | [Analiza wymagań + pytania do PO](portfolio-qa/01-plan-testow/analiza-wymagan.md) |
+| Scenariusze i przypadki testowe | [47 przypadków — bank](portfolio-qa/09-meridian-bank/przypadki-testowe.md), [30 przypadków — sklep](portfolio-qa/02-przypadki-testowe/przypadki-testowe.md) + [CSV do Xray/TestRail](portfolio-qa/02-przypadki-testowe/przypadki-testowe-import.csv) |
+| Zgłaszanie i retest błędów | [16 błędów — bank](portfolio-qa/09-meridian-bank/raporty-bledow.md), [raporty w formacie Jira — sklep](portfolio-qa/03-raporty-bledow/raporty-bledow.md) |
+| Cykl życia defektu, proces testowy | [Cykl życia defektu + STLC](portfolio-qa/03-raporty-bledow/cykl-zycia-defektu.md) |
+| Testy funkcjonalne, regresyjne, eksploracyjne | [Plan i raport — bank](portfolio-qa/09-meridian-bank/plan-i-raport.md), [checklista regresji](portfolio-qa/02-przypadki-testowe/checklista-regresji.md), [sesje eksploracyjne](portfolio-qa/04-testy-eksploracyjne/sesje-eksploracyjne.md) |
+| Testy web i mobile / RWD | Projekty webowe + [checklista mobile/RWD](portfolio-qa/04-testy-eksploracyjne/checklista-mobile-rwd.md) |
+| Testy API (Postman, REST, JSON) | [Przypadki API + kolekcja Postman](portfolio-qa/05-testy-api) |
+| SQL | [Zapytania weryfikujące dane (T-SQL)](portfolio-qa/06-sql) |
+| Automatyzacja: Python, PyTest, Selenium, Page Object | [08-automatyzacja](portfolio-qa/08-automatyzacja) |
+| CI/CD | [GitHub Actions](.github/workflows/testy.yml) — testy przy każdym pushu |
+| Narzędzia AI w pracy QA | [AI w pracy testera + prompty](portfolio-qa/07-ai-w-qa) |
 
 ## Struktura
 
 ```
 .
-├── aplikacja/                       ← list motywacyjny, CV, wiadomości, dopasowanie do oferty
 ├── portfolio-qa/
-│   ├── 01-plan-testow/              ← analiza wymagań, plan testów, raport z testów
+│   ├── 01-plan-testow/              ← analiza wymagań, plan testów, raport z testów (SauceDemo)
 │   ├── 02-przypadki-testowe/        ← przypadki testowe + CSV + checklista regresji
 │   ├── 03-raporty-bledow/           ← raporty defektów (Jira), cykl życia defektu
 │   ├── 04-testy-eksploracyjne/      ← karty sesji + checklista mobile/RWD
@@ -61,10 +57,11 @@ Szczegółowa macierz: [`aplikacja/dopasowanie-do-oferty.md`](aplikacja/dopasowa
 │   ├── 06-sql/                      ← zapytania T-SQL weryfikujące dane
 │   ├── 07-ai-w-qa/                  ← jak używam AI i jak weryfikuję wyniki
 │   ├── 08-automatyzacja/            ← PyTest + Selenium (Page Object) + testy API
-│   └── 09-meridian-bank/            ← projekt testowy bankowości: przypadki, 16 błędów, raport
-├── rozmowa/                         ← przygotowanie do rozmowy, angielski, plan 30-60-90
-├── dokumenty/                       ← CV (PDF) i portfolio (HTML) — portfolio online: lukasztm.github.io/Portfolio
-└── .github/workflows/testy.yml      ← CI: testy API, UI i Newman
+│   └── 09-meridian-bank/            ← projekt główny: testy bankowości internetowej
+├── materialy-aplikacyjne/           ← szablony: list motywacyjny, treść CV, wiadomości, macierz kompetencji
+├── rozmowa/                         ← przygotowanie do rozmowy, angielski, plan pierwszych 90 dni
+├── dokumenty/                       ← CV (PDF) i portfolio (HTML)
+└── .github/workflows/testy.yml      ← CI: testy API, UI (SauceDemo, Meridian Bank) i Postman (Newman)
 ```
 
 ## Moja ścieżka
@@ -72,4 +69,6 @@ Szczegółowa macierz: [`aplikacja/dopasowanie-do-oferty.md`](aplikacja/dopasowa
 - **Kurs Tester Oprogramowania z elementami AI** (ALX, 2025): przypadki testowe, raportowanie
   błędów (Jira/Bugzilla), API (Postman, REST, JSON), SQL, SDLC, Agile/Scrum, testy eksploracyjne.
 - **Kurs Tester Automatyzujący** (ALX, 2026): Python, unittest, PyTest, Selenium WebDriver, Page Object, podstawy Selenium Grid.
+- **Narzędzia:** Jira, Xray, TestLink, Bugzilla, Postman, JMeter, Oracle SQL Developer, Chrome DevTools, PyCharm, Git/GitHub, Claude Code.
 - **Mocne strony:** dokładność, analityczne myślenie, czytelne raporty, konsekwencja, komunikatywność.
+- **Języki:** polski (ojczysty), angielski A2 (dokumentacja techniczna, terminologia QA — aktywnie się uczę).

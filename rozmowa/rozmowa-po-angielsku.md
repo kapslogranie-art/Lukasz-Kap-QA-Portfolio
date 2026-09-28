@@ -1,19 +1,18 @@
 # Rozmowa po angielsku — przygotowanie
 
-Oferta jest dwujęzyczna, a Hiberus to firma międzynarodowa — część rozmowy może być po angielsku.
+W wielu firmach IT (zwłaszcza międzynarodowych) część rozmowy może być po angielsku.
 Przy poziomie A2 kluczowe jest: **krótkie, proste zdania + dobrze przećwiczone przedstawienie się
 + uczciwość co do poziomu**.
 
 ## Self-introduction (przećwicz na głos 10 razy)
 
 > Hello, my name is Łukasz Kap. I am a junior manual tester.
-> I completed a Test Automation course — Python, PyTest and Selenium.
-> Now I am finishing a Software Tester course with AI elements.
+> I completed two courses at ALX: Software Tester with AI, and Test Automation — Python, PyTest and Selenium.
 > I know how to write test cases and bug reports, test APIs in Postman, and write basic SQL queries.
-> For this job, I prepared a project on GitHub. It shows my whole testing process.
+> I have a QA portfolio on GitHub. My biggest project is testing an online bank — I found 16 bugs.
 > I am accurate, communicative and I learn fast.
 > My English is basic, but I read technical documentation and I am improving it every day.
-> I really want to join Hiberus and grow in test automation.
+> I really want to join your team and grow in test automation.
 
 *Wymowa (orientacyjnie):* accurate — **ÆK**-jə-rət · communicative — kə-**MJU**-ni-kə-tiw ·
 documentation — do-kju-men-**TEJ**-szyn · automation — o-tə-**MEJ**-szyn
@@ -71,7 +70,7 @@ Severity: Critical   Reproducibility: 5/5
 ## Pytania, które mogą paść (i proste odpowiedzi)
 
 - **Why do you want to work as a tester?** — I like finding problems and solving puzzles. I pay attention to details.
-- **Why Hiberus?** — It is an international company with many projects and good training — Hiberus University.
+- **Why our company?** — [Prepare 1–2 simple sentences, e.g.: I like your product / your projects in banking. You offer training, and I want to grow in test automation.]
 - **What is a bug report?** — It is a description of a problem: steps, expected result, actual result, severity and attachments.
 - **What is regression testing?** — We check that new changes did not break old functions.
 - **What are your strengths?** — I am accurate, consistent and communicative.

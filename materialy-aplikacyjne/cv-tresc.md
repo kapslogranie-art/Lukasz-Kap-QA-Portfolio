@@ -1,11 +1,13 @@
 # Łukasz Kap — Tester Manualny (Junior QA)
 
-Radzyń Podlaski (gotowość do pracy hybrydowej we Wrocławiu) · kaplukasz@gmail.com · 515-836-183
+Radzyń Podlaski (praca zdalna, hybrydowa lub stacjonarna — gotowość do dojazdów) · kaplukasz@gmail.com · 515-836-183
 Portfolio: lukasztm.github.io/Portfolio · GitHub: *(link do tego repozytorium)*
 
-> Treść CV przeredagowana pod ofertę Hiberus Poland. Można ją przenieść 1:1 do szablonu graficznego
-> (aktualne CV: `dokumenty/Lukasz_Kap_CV_QA_Tester.pdf`). Kolejność sekcji celowo zaczyna się od umiejętności i projektu,
-> bo przy braku komercyjnego doświadczenia to one najlepiej pokazują poziom.
+> Tekstowa wersja CV do wklejania w formularze rekrutacyjne i do szybkiego dopasowania pod ofertę
+> (wersja graficzna: `dokumenty/Lukasz_Kap_CV_QA_Tester.pdf`). Kolejność sekcji celowo zaczyna się od
+> umiejętności i projektów, bo przy braku komercyjnego doświadczenia to one najlepiej pokazują poziom.
+> **Pod konkretną ofertę:** przestaw kolejność punktów w „Umiejętnościach” tak, żeby na górze były
+> technologie z ogłoszenia, i użyj w podsumowaniu 2–3 słów kluczowych z oferty.
 
 ---
 
@@ -17,7 +19,7 @@ błędów w Jira oraz retesty. Znam podstawy testów API (Postman), SQL i automa
 (Python, PyTest, Selenium). Na co dzień wykorzystuję narzędzia AI do analizy wymagań
 i przygotowania testów — zawsze z weryfikacją wyników. Dokładny, konsekwentny, komunikatywny.
 
-## Umiejętności kluczowe dla stanowiska
+## Umiejętności
 
 **Testowanie manualne**
 - Analiza wymagań, user stories i kryteriów akceptacji; zadawanie pytań doprecyzowujących
@@ -44,9 +46,14 @@ i przygotowania testów — zawsze z weryfikacją wyników. Dokładny, konsekwen
 
 **Metodyki:** SDLC, STLC, Agile/Scrum (sprinty, daily, refinement, Definition of Done)
 
-## Projekt portfolio (GitHub)
+## Projekty portfolio (GitHub)
 
-**Kompleksowe testy aplikacji e-commerce (SauceDemo) + API (Restful-Booker)**
+**Testy bankowości internetowej (Meridian Bank)**
+- 47 przypadków testowych w 10 obszarach (logowanie z SMS, przelewy, BLIK, lokaty, kantor, historia)
+- 16 zgłoszonych błędów, w tym 4 krytyczne (np. przelew obciążający niewłaściwy rachunek, błędny kurs walut)
+- 32 testy automatyczne PyTest + Selenium w CI (GitHub Actions); znane błędy jako testy `xfail` wymuszające retest
+
+**Testy aplikacji e-commerce (SauceDemo) + API (Restful-Booker)**
 - Analiza wymagań i lista pytań do analityka, plan testów z matrycą ryzyk
 - 30 przypadków testowych (Markdown + CSV do importu w Xray/TestRail), checklista regresji
 - Raporty błędów w formacie Jira dla defektów znalezionych w aplikacji

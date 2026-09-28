@@ -1,6 +1,6 @@
 # SQL w pracy testera (Microsoft SQL Server)
 
-Oferta wymienia **Microsoft SQL (Junior)**. Plik [`zapytania-weryfikacyjne.sql`](zapytania-weryfikacyjne.sql)
+Najczęściej spotykane w ofertach bazy to **Microsoft SQL Server**, Oracle i PostgreSQL. Plik [`zapytania-weryfikacyjne.sql`](zapytania-weryfikacyjne.sql)
 jest napisany w T-SQL i sam tworzy przykładowe tabele, więc można go uruchomić na czystej bazie
 (SQL Server Express, Docker `mcr.microsoft.com/mssql/server` albo https://dbfiddle.uk → SQL Server).
 

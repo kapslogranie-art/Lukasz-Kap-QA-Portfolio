@@ -1,6 +1,6 @@
 # Automatyzacja — PyTest + Selenium (Page Object) + testy API
 
-Oferta mówi o **wsparciu w przygotowaniu lub utrzymaniu prostych testów automatycznych** oraz wymienia
+Od testera manualnego coraz częściej oczekuje się **wsparcia w przygotowaniu lub utrzymaniu prostych testów automatycznych**; oferty wymieniają
 jako atut Selenium / Playwright / Cypress, Python i **CI/CD**. Ten projekt pokazuje, że potrafię
 uruchomić, zrozumieć i rozwijać taki zestaw testów.
 

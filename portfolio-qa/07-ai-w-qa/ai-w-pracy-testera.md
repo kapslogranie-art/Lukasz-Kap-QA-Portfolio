@@ -1,6 +1,6 @@
 # AI w pracy testera — jak z niego korzystam
 
-Oferta wymienia jako atut **znajomość narzędzi AI wspierających analizę wymagań, przygotowanie
+Coraz więcej ofert wymienia jako atut **znajomość narzędzi AI wspierających analizę wymagań, przygotowanie
 testów i codzienną pracę QA**. Na kursie *Tester oprogramowania z elementami AI* (ALX) i w pracy
 nad tym portfolio używam asystentów AI (m.in. **Claude / Claude Code**, ChatGPT).
 

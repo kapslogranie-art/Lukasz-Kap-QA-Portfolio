@@ -1,0 +1,31 @@
+ID,Title,Section,Priority,Type,Preconditions,Steps,Expected Result,Requirement
+TC-001,Logowanie poprawnymi danymi,Logowanie,High,Functional,Strona logowania otwarta,"1. Wpisz login standard_user 2. Wpisz hasło secret_sauce 3. Kliknij Login","Przekierowanie na /inventory.html; nagłówek Products; 6 produktów",US-01
+TC-002,Logowanie błędnym hasłem,Logowanie,High,Functional,Strona logowania otwarta,"1. Wpisz standard_user / wrong_pass 2. Kliknij Login","Komunikat: Username and password do not match any user in this service; brak zalogowania",US-01
+TC-003,Logowanie zablokowanego użytkownika,Logowanie,High,Functional,Strona logowania otwarta,"1. Wpisz locked_out_user / secret_sauce 2. Kliknij Login","Komunikat: Sorry, this user has been locked out.",US-01
+TC-004,Logowanie z pustymi polami,Logowanie,Medium,Functional,Strona logowania otwarta,"1. Puste pola -> Login 2. Tylko login -> Login 3. Tylko hasło -> Login","1. Username is required 2. Password is required 3. Username is required",US-01
+TC-005,Wielkość liter w loginie,Logowanie,Low,Functional,Strona logowania otwarta,"1. Wpisz STANDARD_USER / secret_sauce 2. Kliknij Login","Komunikat o niepoprawnych danych (do potwierdzenia z PO)",US-01
+TC-006,Spacje w loginie,Logowanie,Low,Functional,Strona logowania otwarta,"1. Wpisz 'standard_user ' (spacja) / secret_sauce 2. Kliknij Login","Zachowanie zgodne z wymaganiem (do potwierdzenia z PO)",US-01
+TC-007,Zamknięcie komunikatu błędu,Logowanie,Low,UI,Wywołany błąd logowania,"1. Kliknij X w komunikacie","Komunikat i czerwone podświetlenie pól znikają",US-01
+TC-008,Dostęp bez logowania przez URL,Logowanie,High,Security,Brak aktywnej sesji,"1. Otwórz /inventory.html w trybie incognito","Przekierowanie na logowanie z komunikatem o wymaganym zalogowaniu",US-01
+TC-009,Czas logowania performance_glitch_user,Logowanie,Low,Performance,Strona logowania otwarta,"1. Zaloguj performance_glitch_user 2. Zmierz czas do wyświetlenia listy","Lista w akceptowalnym czasie (próg do ustalenia z PO)",US-01
+TC-010,Wyświetlenie listy produktów,Produkty,High,Functional,Zalogowany standard_user,"1. Sprawdź listę produktów","6 produktów ze zdjęciem, nazwą, opisem, ceną i przyciskiem; zdjęcia zgodne z nazwami",US-02
+TC-011,Sortowanie Z-A,Produkty,Medium,Functional,Zalogowany standard_user,"1. Wybierz Name (Z to A)","Pierwszy Test.allTheThings() T-Shirt (Red); ostatni Sauce Labs Backpack",US-02
+TC-012,Sortowanie cena rosnąco,Produkty,Medium,Functional,Zalogowany standard_user,"1. Wybierz Price (low to high)","Ceny niemalejąco; pierwsza 7.99; ostatnia 49.99",US-02
+TC-013,Sortowanie cena malejąco,Produkty,Medium,Functional,Zalogowany standard_user,"1. Wybierz Price (high to low)","Ceny nierosnąco; pierwsza 49.99; ostatnia 7.99",US-02
+TC-014,Szczegóły produktu,Produkty,Medium,Functional,Zalogowany standard_user,"1. Kliknij Sauce Labs Backpack 2. Kliknij Back to products","1. Szczegóły tego samego produktu; cena 29.99 2. Powrót do listy",US-02
+TC-015,Spójność danych lista-szczegóły,Produkty,Low,Functional,Zalogowany standard_user,"1. Dla 6 produktów porównaj nazwę, cenę i zdjęcie na liście i w szczegółach","Dane identyczne",US-02
+TC-016,Dodanie produktu do koszyka,Koszyk,High,Functional,Zalogowany standard_user; pusty koszyk,"1. Add to cart przy Sauce Labs Backpack 2. Otwórz koszyk","1. Przycisk Remove; licznik 1 2. Produkt w koszyku, ilość 1, 29.99",US-03
+TC-017,Dodanie wszystkich produktów,Koszyk,Medium,Functional,Zalogowany standard_user; pusty koszyk,"1. Dodaj 6 produktów","Licznik 6; 6 pozycji w koszyku",US-03
+TC-018,Usunięcie produktu z listy,Koszyk,Medium,Functional,Produkt w koszyku,"1. Kliknij Remove na liście","Przycisk Add to cart; licznik znika",US-03
+TC-019,Usunięcie produktu w koszyku,Koszyk,Medium,Functional,2 produkty w koszyku,"1. Otwórz koszyk 2. Usuń jeden produkt","1 pozycja; licznik 1",US-03
+TC-020,Koszyk po odświeżeniu,Koszyk,Low,Functional,2 produkty w koszyku,"1. Odśwież stronę","Licznik 2; produkty w koszyku",US-03
+TC-021,Reset App State,Koszyk,Low,Functional,2 produkty w koszyku,"1. Menu -> Reset App State","Licznik znika; przyciski wracają do Add to cart",US-03
+TC-022,Pełna ścieżka zakupu E2E,Zamówienie,High,E2E,Zalogowany standard_user; pusty koszyk,"1. Dodaj Backpack i Bike Light 2. Checkout 3. Jan / Kowalski / 50-051 -> Continue 4. Sprawdź podsumowanie 5. Finish","Item total 39.98; Tax 3.20; Total 43.18; Thank you for your order!; pusty koszyk",US-04
+TC-023,Walidacja formularza checkout,Zamówienie,Medium,Functional,Produkt w koszyku; formularz checkout,"1. Wszystko puste 2. Tylko imię 3. Imię i nazwisko 4. Wszystkie pola","1. First Name is required 2. Last Name is required 3. Postal Code is required 4. Przejście dalej",US-04
+TC-024,Formularz - wartości brzegowe i znaki specjalne,Zamówienie,Low,Functional,Formularz checkout,"1. Imię 1 znak 2. Imię 256 znaków 3. Nazwisko Łukasz-Żółć 4. Kod abc!@# 5. Imię <script>alert(1)</script>","Zgodnie z wymaganiami; brak wykonania skryptu",US-04
+TC-025,Anulowanie zamówienia,Zamówienie,Medium,Functional,Strona Checkout: Overview,"1. Kliknij Cancel","Powrót do produktów; koszyk bez zmian",US-04
+TC-026,Zamówienie z pustym koszykiem,Zamówienie,Medium,Negative,Pusty koszyk,"1. Otwórz koszyk 2. Kliknij Checkout","Brak możliwości złożenia zamówienia",US-04
+TC-027,Obliczenia dla 6 produktów,Zamówienie,Medium,Functional,6 produktów w koszyku,"1. Przejdź do podsumowania zamówienia","Item total 129.94; Tax 10.40; Total 140.34",US-04
+TC-028,Wylogowanie,Menu,High,Functional,Zalogowany standard_user,"1. Menu -> Logout 2. Wstecz w przeglądarce","Strona logowania; brak dostępu do produktów",US-05
+TC-029,Link About,Menu,Low,Functional,Zalogowany standard_user,"1. Menu -> About","Otwiera się saucelabs.com",US-05
+TC-030,Widok mobilny 375x812,UI,Low,UI,DevTools iPhone 12 Pro,"1. Przejdź ścieżkę TC-022","Elementy widoczne i klikalne; brak poziomego scrolla",NFR

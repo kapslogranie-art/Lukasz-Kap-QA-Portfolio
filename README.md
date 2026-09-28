@@ -5,7 +5,7 @@
 
 **Kontakt:** kaplukasz@gmail.com · Radzyń Podlaski — dojazd do biura we Wrocławiu 2× w miesiącu bez problemu
 
-[![Testy automatyczne](https://github.com/kapslogranie-art/-ukasz-Kap-Manual-Tester/actions/workflows/testy.yml/badge.svg)](https://github.com/kapslogranie-art/-ukasz-Kap-Manual-Tester/actions/workflows/testy.yml)
+[![Testy automatyczne](https://github.com/kapslogranie-art/Lukasz-Kap-QA-Portfolio/actions/workflows/testy.yml/badge.svg)](https://github.com/kapslogranie-art/Lukasz-Kap-QA-Portfolio/actions/workflows/testy.yml)
 
 ---
 

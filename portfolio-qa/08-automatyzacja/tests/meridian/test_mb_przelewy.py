@@ -52,7 +52,7 @@ def test_transfer_above_balance_is_rejected(bank):
     assert bank.text_of(tid("transfer-amount-error")) == "Niewystarczające środki na rachunku."
 
 
-@pytest.mark.xfail(strict=True, reason="MB-03: przelew na kwotę 0,00 zł przechodzi walidację.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-03: przelew na kwotę 0,00 zł przechodzi walidację.")
 def test_transfer_with_zero_amount_is_rejected(bank):
     """MB-TC-014"""
     bank.go_to("transfers")
@@ -61,7 +61,7 @@ def test_transfer_with_zero_amount_is_rejected(bank):
     assert bank.error_visible("transfer-amount-error")
 
 
-@pytest.mark.xfail(strict=True, reason="MB-02: przelew z konta oszczędnościowego obciąża konto osobiste.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-02: przelew z konta oszczędnościowego obciąża konto osobiste.")
 def test_transfer_from_savings_debits_savings_account(bank):
     """MB-TC-015"""
     ror_before, sav_before = bank.balance("ror"), bank.balance("sav")
@@ -83,7 +83,7 @@ def _create_standing_order(bank, name):
     bank.wait.until(lambda d: not bank.is_visible(tid("modal-standing")))
 
 
-@pytest.mark.xfail(strict=True, reason="MB-12: po usunięciu zlecenia nowe zlecenia dostają zduplikowane ID.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-12: po usunięciu zlecenia nowe zlecenia dostają zduplikowane ID.")
 def test_standing_orders_have_unique_ids(bank):
     """MB-TC-017"""
     bank.go_to("transfers")

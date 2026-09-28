@@ -29,7 +29,7 @@ def test_history_incoming_filter_shows_only_positive_amounts(bank):
     assert all(a > 0 for a in amounts)
 
 
-@pytest.mark.xfail(strict=True, reason="MB-08: przy 10 pozycjach na stronę wyświetla się 11 wierszy.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-08: przy 10 pozycjach na stronę wyświetla się 11 wierszy.")
 def test_history_shows_ten_rows_per_page(bank):
     """MB-TC-022"""
     bank.go_to("history")
@@ -37,7 +37,7 @@ def test_history_shows_ten_rows_per_page(bank):
     assert len(bank.history_rows()) == 10
 
 
-@pytest.mark.xfail(strict=True, reason="MB-07: sortowanie po kwocie jest tekstowe, a nie liczbowe.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-07: sortowanie po kwocie jest tekstowe, a nie liczbowe.")
 def test_history_sort_by_amount_is_numeric(bank):
     """MB-TC-023"""
     bank.go_to("history")
@@ -58,7 +58,7 @@ def test_blik_code_can_be_generated_and_cancelled(bank):
     assert bank.is_visible(tid("blik-generate"))
 
 
-@pytest.mark.xfail(strict=True, reason="MB-04: kod BLIK ma 5 cyfr zamiast 6.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-04: kod BLIK ma 5 cyfr zamiast 6.")
 def test_blik_code_has_six_digits(bank):
     """MB-TC-031"""
     bank.go_to("blik")
@@ -85,7 +85,7 @@ def test_deposit_amount_below_minimum_shows_error(bank):
     assert bank.text_of(tid("deposit-amount-error")) == "Kwota od 1 000 do 500 000 zł."
 
 
-@pytest.mark.xfail(strict=True, reason="MB-06: lokata 12 mies. — w ofercie 5,00%, w wyliczeniu 4,80%.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-06: lokata 12 mies. — w ofercie 5,00%, w wyliczeniu 4,80%.")
 def test_twelve_month_deposit_uses_advertised_rate(bank):
     """MB-TC-042"""
     bank.go_to("deposits")
@@ -124,7 +124,7 @@ def test_fx_same_currency_disables_exchange(bank):
     assert not bank.find(tid("fx-execute")).is_enabled()
 
 
-@pytest.mark.xfail(strict=True, reason="MB-05: PLN→EUR przeliczane po kursie kupna 4,24 zamiast sprzedaży 4,38.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-05: PLN→EUR przeliczane po kursie kupna 4,24 zamiast sprzedaży 4,38.")
 def test_fx_pln_to_eur_uses_sell_rate(bank):
     """MB-TC-061 — 100 PLN / 4,38 = 22,83 EUR"""
     bank.go_to("fx")
@@ -133,7 +133,7 @@ def test_fx_pln_to_eur_uses_sell_rate(bank):
 
 
 # ---------- wiadomości ----------
-@pytest.mark.xfail(strict=True, reason="MB-10: licznik nieprzeczytanych nie znika po przeczytaniu wiadomości.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-10: licznik nieprzeczytanych nie znika po przeczytaniu wiadomości.")
 def test_unread_badge_disappears_after_reading(bank):
     """MB-TC-070"""
     assert bank.text_of(tid("messages-badge")) == "1"
@@ -168,7 +168,7 @@ def test_password_change_with_mismatched_repeat(bank):
     assert bank.error_visible("password-repeat-error")
 
 
-@pytest.mark.xfail(strict=True, reason="MB-09: hasło 8-znakowe odrzucane mimo wymagania „min. 8 znaków”.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-09: hasło 8-znakowe odrzucane mimo wymagania „min. 8 znaków”.")
 def test_password_with_exactly_eight_chars_is_accepted(bank):
     """MB-TC-082 — wartość brzegowa: 8 znaków"""
     bank.go_to("settings")

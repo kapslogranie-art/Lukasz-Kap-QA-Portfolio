@@ -29,9 +29,10 @@ skupiają się na **poprawności kwot, autoryzacji i bezpieczeństwie sesji**.
 
 ## Jak testy automatyczne dokumentują błędy
 
-Każdy znaleziony błąd ma test oznaczony `@pytest.mark.xfail(strict=True, reason="MB-xx: …")`:
+Każdy zautomatyzowany błąd ma test oznaczony `@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-xx: …")`:
 
 - dziś test **oczekiwanie nie przechodzi** (xfail) — pipeline jest zielony, a raport pokazuje listę znanych błędów,
+- `raises=AssertionError` sprawia, że za „znany błąd” uznawana jest tylko niespełniona asercja — zepsuty lokator czy timeout nadal zaczerwieni pipeline,
 - gdy developer naprawi błąd, test zacznie przechodzić (XPASS) i przez `strict=True` **pipeline zrobi się czerwony**
   — to sygnał, żeby wykonać retest, zamknąć zgłoszenie i zdjąć znacznik `xfail`, a test staje się testem regresji.
 

@@ -47,7 +47,7 @@ def test_wrong_sms_code_is_rejected(meridian):
     assert not meridian.is_visible(tid("page-dashboard"))
 
 
-@pytest.mark.xfail(strict=True, reason="MB-01: blokada konta już po 2. nieudanej próbie zamiast po 3.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-01: blokada konta już po 2. nieudanej próbie zamiast po 3.")
 def test_account_is_not_locked_after_two_failed_attempts(meridian):
     """MB-TC-004"""
     meridian.login(LOGIN, "Zle_haslo1")
@@ -62,7 +62,7 @@ def test_account_is_not_locked_after_two_failed_attempts(meridian):
     assert not meridian.is_visible(tid("login-lockout"))
 
 
-@pytest.mark.xfail(strict=True, reason="MB-16: brak limitu prób kodu SMS przy logowaniu.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-16: brak limitu prób kodu SMS przy logowaniu.")
 def test_login_sms_step_is_blocked_after_three_wrong_codes(meridian):
     """MB-TC-006"""
     meridian.login(LOGIN, PASSWORD)
@@ -84,7 +84,7 @@ def test_logout(bank):
     assert bank.driver.find_element(*tid("login-password")).get_attribute("value") == ""
 
 
-@pytest.mark.xfail(strict=True, reason="MB-11: przy limicie 1 min ostrzeżenie o sesji pojawia się natychmiast.")
+@pytest.mark.xfail(strict=True, raises=AssertionError, reason="MB-11: przy limicie 1 min ostrzeżenie o sesji pojawia się natychmiast.")
 def test_one_minute_timeout_does_not_warn_immediately(bank):
     """MB-TC-009"""
     bank.go_to("settings")

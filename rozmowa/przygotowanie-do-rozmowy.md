@@ -15,9 +15,8 @@
 ## 2. Przedstawienie się (ok. 90 sekund)
 
 > Nazywam się Łukasz Kap. Przebranżawiam się do IT i od ponad roku systematycznie buduję warsztat testera.
-> Ukończyłem kurs Tester Automatyzujący — Python, PyTest, Selenium, Page Object — a teraz kończę kurs
-> „Tester oprogramowania z elementami AI” w ALX, gdzie pracuję z przypadkami testowymi, Jirą, Postmanem,
-> SQL i Scrumem.
+> W ALX przeszedłem dwa kursy: „Tester oprogramowania z elementami AI” — przypadki testowe, Jira,
+> Postman, SQL, Scrum — oraz „Tester Automatyzujący” — Python, PyTest, Selenium i Page Object.
 >
 > Nie mam jeszcze komercyjnego doświadczenia, dlatego pod tę ofertę przygotowałem kompletny projekt na
 > GitHubie: od analizy wymagań i pytań do analityka, przez 30 przypadków testowych i raporty błędów,

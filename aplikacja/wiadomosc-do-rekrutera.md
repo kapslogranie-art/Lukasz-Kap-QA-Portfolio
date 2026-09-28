@@ -33,7 +33,7 @@
 
 ## Checklista przed wysłaniem aplikacji
 
-- [ ] CV w PDF, nazwa pliku: `Lukasz_Kap_CV_Tester_Manualny.pdf` (bez polskich znaków)
+- [ ] CV w PDF: `dokumenty/Lukasz_Kap_CV_QA_Tester.pdf` (nazwa bez polskich znaków)
 - [ ] W CV dodany link do tego repozytorium i klauzula RODO
 - [ ] Repozytorium ustawione jako **publiczne** i sprawdzone w trybie incognito
 - [ ] List motywacyjny zapisany do PDF (z pliku `list-motywacyjny.md`)

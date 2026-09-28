@@ -63,13 +63,13 @@ Szczegółowa macierz: [`aplikacja/dopasowanie-do-oferty.md`](aplikacja/dopasowa
 │   ├── 08-automatyzacja/            ← PyTest + Selenium (Page Object) + testy API
 │   └── 09-meridian-bank/            ← projekt testowy bankowości: przypadki, 16 błędów, raport
 ├── rozmowa/                         ← przygotowanie do rozmowy, angielski, plan 30-60-90
-├── dokumenty/                       ← CV (PDF) i portfolio (HTML)
+├── dokumenty/                       ← CV (PDF) i portfolio (HTML) — portfolio online: lukasztm.github.io/Portfolio
 └── .github/workflows/testy.yml      ← CI: testy API, UI i Newman
 ```
 
 ## Moja ścieżka
 
-- **Kurs Tester Oprogramowania z elementami AI** (ALX, 2025 — w trakcie): przypadki testowe, raportowanie
+- **Kurs Tester Oprogramowania z elementami AI** (ALX, 2025): przypadki testowe, raportowanie
   błędów (Jira/Bugzilla), API (Postman, REST, JSON), SQL, SDLC, Agile/Scrum, testy eksploracyjne.
-- **Kurs Tester Automatyzujący:** Python, unittest, PyTest, Selenium WebDriver, Page Object, podstawy Selenium Grid.
+- **Kurs Tester Automatyzujący** (ALX, 2026): Python, unittest, PyTest, Selenium WebDriver, Page Object, podstawy Selenium Grid.
 - **Mocne strony:** dokładność, analityczne myślenie, czytelne raporty, konsekwencja, komunikatywność.

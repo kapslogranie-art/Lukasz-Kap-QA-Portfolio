@@ -1,10 +1,10 @@
 # Łukasz Kap — Tester Manualny (Junior QA)
 
 Radzyń Podlaski (gotowość do pracy hybrydowej we Wrocławiu) · kaplukasz@gmail.com · 515-836-183
-GitHub: *(link do tego repozytorium)*
+Portfolio: lukasztm.github.io/Portfolio · GitHub: *(link do tego repozytorium)*
 
 > Treść CV przeredagowana pod ofertę Hiberus Poland. Można ją przenieść 1:1 do szablonu graficznego
-> (obecne CV w `dokumenty/`). Kolejność sekcji celowo zaczyna się od umiejętności i projektu,
+> (aktualne CV: `dokumenty/Lukasz_Kap_CV_QA_Tester.pdf`). Kolejność sekcji celowo zaczyna się od umiejętności i projektu,
 > bo przy braku komercyjnego doświadczenia to one najlepiej pokazują poziom.
 
 ---
@@ -28,10 +28,10 @@ i przygotowania testów — zawsze z weryfikacją wyników. Dokładny, konsekwen
 - Raportowanie defektów: kroki, wynik oczekiwany/rzeczywisty, priorytet, ważność, załączniki, retest
 
 **Narzędzia**
-- Jira (zgłoszenia, workflow), Xray / TestRail (struktura przypadków i import CSV), Bugzilla
-- Postman (REST, JSON, kody HTTP, testy w zakładce *Tests*), Chrome DevTools (Network, Console)
+- Jira (zgłoszenia, workflow), Xray, TestLink, TestRail (struktura przypadków i import CSV), Bugzilla
+- Postman (REST, JSON, kody HTTP, testy w zakładce *Tests*), Chrome DevTools (Network, Console), JMeter (podstawy)
 - SQL (Microsoft SQL Server / T-SQL): SELECT, WHERE, JOIN, GROUP BY, HAVING, transakcje — weryfikacja danych
-- Git / GitHub, GitHub Actions (CI — automatyczne uruchamianie testów), Newman
+- Oracle SQL Developer, PyCharm, ShareX, Git / GitHub, GitHub Actions (CI — automatyczne uruchamianie testów), Newman
 
 **Automatyzacja (podstawy)**
 - Python, unittest, PyTest (fixtures, parametrize, conftest), Selenium WebDriver, Page Object Model
@@ -56,9 +56,10 @@ i przygotowania testów — zawsze z weryfikacją wyników. Dokładny, konsekwen
 
 ## Edukacja i kursy
 
-- **2025 – obecnie** — ALX, *Tester oprogramowania z elementami AI* (w trakcie)
-- **Kurs Tester Automatyzujący** — Python dla testerów, HTML/CSS, lokatory, Selenium WebDriver,
+- **2026** — ALX, *Kurs Tester Automatyzujący* — Python dla testerów, HTML/CSS, lokatory, Selenium WebDriver,
   PyTest, Page Object, raportowanie, podstawy Selenium Grid
+- **2025** — ALX, *Kurs Tester Oprogramowania z elementami AI* — przypadki testowe, raportowanie błędów,
+  API/Postman, SQL, SDLC, Agile/Scrum, testy eksploracyjne
 - **2011** — Uzupełniające Liceum Ogólnokształcące, Zakład Doskonalenia Zawodowego
 
 ## Języki
